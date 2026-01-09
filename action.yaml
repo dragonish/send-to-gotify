@@ -1,0 +1,6 @@
+name: 'send-to-gotify'
+author: 'dragonish'
+description: 'Send a message to Gotify'
+runs:
+  using: 'node24'
+  main: 'main.cjs'
