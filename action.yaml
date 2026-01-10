@@ -1,6 +1,56 @@
 name: 'send-to-gotify'
 author: 'dragonish'
-description: 'Send a message to Gotify'
+description: 'Send a message to Gotify.'
+inputs:
+  url:
+    description: 'Gotify service address.'
+    required: true
+  token:
+    description: 'Gotify application token.'
+    required: true
+  message:
+    description: 'The message. Markdown (excluding html) is allowed.'
+    required: true
+  title:
+    description: 'The title of the message.'
+    required: false
+    default: ''
+  priority:
+    description: 'The priority of the message.'
+    required: false
+    default: ''
+  content-type:
+    description: 'Changes how client displays information.'
+    required: false
+    default: 'text/plain'
+  click-url:
+    description: 'Opens an URL on notification click.'
+    required: false
+    default: ''
+  big-image-url:
+    description: 'Shows a big image in the notification.'
+    required: false
+    default: ''
+  intent-url:
+    description: 'Opens an intent after the notification was delivered.'
+    required: false
+    default: ''
+  extras:
+    description: 'The extra data sent along the message.'
+    required: false
+    default: ''
+outputs:
+  success:
+    description: 'Informs whether sending was successful.'
+  id:
+    description: 'The message id.'
+  appid:
+    description: 'The application id that send this message.'
+  date:
+    description: 'The date the message was created.'
 runs:
   using: 'node24'
   main: 'main.cjs'
+branding:
+  icon: 'message-square'
+  color: 'blue'

@@ -15,7 +15,7 @@ export default {
   context: 'this',
   plugins: [
     typescript({
-      tsconfig: './tsconfig.json',
+      tsconfig: './tsconfig.rollup.json',
     }),
     resolve({
       exportConditions: ['node'],
