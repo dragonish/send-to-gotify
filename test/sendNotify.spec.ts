@@ -10,7 +10,7 @@ describe('sendNotify', function () {
     apiUrl = process.env.API_URL || '';
     if (!apiUrl) {
       console.error('The API URL is empty! Please write the value of the API_URL variable in the .env file.');
-      process.exit(1);
+      this.skip();
     }
   });
 
