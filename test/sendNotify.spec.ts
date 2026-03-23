@@ -9,7 +9,7 @@ describe('sendNotify', function () {
   before(function () {
     apiUrl = process.env.API_URL || '';
     if (!apiUrl) {
-      console.error('The API URL is empty! Please write the value of the API_URL variable in the .env file.');
+      console.error('The API URL is empty! Please create a .env file in the project root directory and set the API_URL variable.');
       this.skip();
     }
   });
