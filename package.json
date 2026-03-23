@@ -1,6 +1,6 @@
 {
   "name": "send-to-gotify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send a message to Gotify",
   "main": "main.cjs",
   "type": "module",
