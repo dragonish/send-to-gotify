@@ -63,6 +63,7 @@ async function main() {
       intentUrl: inputs.intentUrl,
     });
 
+    core.info('Notification sent successfully.');
     core.setOutput('id', res.id);
     core.setOutput('appid', res.appid);
     core.setOutput('date', res.date);
